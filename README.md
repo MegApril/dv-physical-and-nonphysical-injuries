@@ -5,7 +5,8 @@ The goal of this project is to compare the number of non-physical injuries vs. p
 ## Changelog
 - **2025-06-12**
   - Removed:
-    - Rows 1-7, 9 in using Excel to remove metadata and make spreadsheets ready for wide -> long format using R studio.
+    - Rows 1-7, and 9 using Excel
+      - This removes metadata and makes spreadsheets ready to change from wide -> long format using R studio.
   - Added:
     - into external data folder:
       - county_classification.csv
