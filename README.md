@@ -4,14 +4,17 @@ The goal of this project is to compare the number of non-physical injuries vs. p
 
 ## Changelog
 - **2025-06-12**
-  - Added into external data folder:
-    - county_classification.csv
-  - Added into raw data folder:
-    - DV_Injury_Type_2020_CO_Counties.csv
-    - DV_Injury_Type_2021_CO_Counties.csv
-    - DV_Injury_Type_2022_CO_Counties.csv
-    - DV_Injury_Type_2023_CO_Counties.csv
-    - DV_Injury_Type_2024_CO_Counties.csv
+  - Removed:
+    - Rows 1-7, 9 in using Excel to remove metadata and make spreadsheets ready for wide -> long format using R studio.
+  - Added:
+    - into external data folder:
+      - county_classification.csv
+    - into raw data folder:
+      - DV_Injury_Type_2020_CO_Counties.csv
+      - DV_Injury_Type_2021_CO_Counties.csv
+      - DV_Injury_Type_2022_CO_Counties.csv
+      - DV_Injury_Type_2023_CO_Counties.csv
+      - DV_Injury_Type_2024_CO_Counties.csv
 - **2025-06-11**:
   - Created initial README structure with project goal and questions
   - Manually categorized county using data from [Colorado DOLA](https://cdola.colorado.gov/colorado-community-classification)
