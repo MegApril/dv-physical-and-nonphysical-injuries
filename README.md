@@ -4,6 +4,8 @@ The goal of this project is to compare the number of non-physical injuries vs. p
 
 ## Changelog
 - **2025-06-12**
+  - Added into external data folder:
+    - county_classification.csv
   - Added into raw data folder:
     - DV_Injury_Type_2020_CO_Counties.csv
     - DV_Injury_Type_2021_CO_Counties.csv
