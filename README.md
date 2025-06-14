@@ -1,6 +1,6 @@
-# When Violence Doesn’t Leave a Mark: The Hidden Majority of Domestic Violence Cases in Colorado
+# When Violence Doesn’t Leave a Mark: Exploring Domestic Violence Injuries in Colorado
 
-The goal of this project is to compare the number of non-physical injuries vs. physical injuries resulting from domestic violence incidents between urban and suburban counties in Colorado using publicly available crime statistics. This analysis uses SQL, R, basic data cleaning, and regional trend visualization using Tableau.
+A relatively small amount of domestic violence cases in Colorado have recorded injuries. The majority of cases reported injuries as 'none' or 'apparent minor injury.' The goal of this analysis is to find out if this pattern differs between suburban and urban counties. This could show patterns that are representative of underreporting, differences in classification between counties, or uneven support based on urban or suburban geographic areas. This analysis uses SQL and R for basic data cleaning, and regional trend visualization using Tableau.
 
 ## Changelog
 - **2025-06-12**
