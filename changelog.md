@@ -1,5 +1,21 @@
 ## Changelog
 
+### 2025-06-16
+
+#### Added
+- Faceted line plots (Step 9) to visualize individual trends for top 5 injury types across 2020–2024.
+- `complete()` step to fill in missing year-injury combinations with zero counts, ensuring consistency in visualizations.
+
+#### Updated
+- Top 5 injury types are now calculated based on total injuries across all years, rather than within-year frequencies.
+- Line plots use both `color` and `linetype` aesthetics for colorblind accessibility.
+- All faceted y-axes now begin at zero using `scale_y_continuous(limits = c(0, NA))` for visual comparability.
+
+#### Fixed
+- Prior issue where some injury types (e.g., “Possible Internal Injury”) were excluded due to inconsistent casing or whitespace.
+- Missing year labels in facet plots due to incomplete injury-year combinations.
+
+
 ### 2025-06-13 
 #### Added
 - Linked R analysis workflow to existing GitHub repository to initiate reproducible documentation.
