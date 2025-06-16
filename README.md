@@ -57,9 +57,9 @@ The analysis merges DV injury data with county classification metadata to explor
 ---
 
 ## Key Insights  
-- **Psychological Abuse Is Often Invisible**: The dominance of “None” as an injury type suggests that DV often leaves no visible marks — yet these cases still involve harm  
-- **Geographic Disparities Exist**: Urban areas consistently reported more injuries, but some high-severity categories rose in rural areas  
-- **Data Gaps Required Completion**: Many county-year combinations were missing; we used `tidyr::complete()` to fill them and improve comparison validity
+- **Psychological Abuse Is Often Invisible**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves no physical injuries, yet these cases still involve harm.
+- **Geographic Disparities Exist**: Urban areas consistently reported more injuries, but some high-severity categories rose in rural areas.
+- **Data Gaps Required Completion**: Many county-year combinations were missing; we used `tidyr::complete()` to fill them and improve comparison validity.
 
 ---
 
