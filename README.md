@@ -64,7 +64,7 @@ The analysis merges DV injury data with county classification metadata to explor
 ---
 
 ## Why It Matters  
-Injury reports in DV cases are not just medical—they are social signals. This analysis helps recognize **non-physical abuse**, geographic inequities, and systemic blind spots. These insights may support more equitable public health interventions, reporting practices, and victim services.
+Injury reports in DV cases are not just physical—they are environmental too. This analysis helps recognize non-physical abuse, geographic inequities, and systemic blind spots. These insights may support more equitable public health interventions, reporting practices, and victim services. It is also important to note that given the nature of domestic violence, there are likely many cases that are not reported.
 
 ---
 
