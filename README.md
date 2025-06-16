@@ -10,7 +10,7 @@ The analysis merges DV injury data with county classification metadata to explor
 ## Key Questions  
 - Do injury type patterns differ between urban and rural counties?  
 - What injury types are most frequently reported, and how have they changed from 2020 to 2024?  
-- Does the prevalence of “None” as an injury type signal psychological abuse or coercive control?
+- What does the prevalence of “None” as an injury type signal?
 
 ---
 
