@@ -16,7 +16,7 @@ The analysis merges DV injury data with county classification metadata to explor
 
 ## Data & Tools  
 **Data Sources:**  
-- 2020–2024 Colorado DV injury type CSVs (colorado crime statistics)  
+- 2020–2024 Colorado DV injury type CSVs [colorado crime statistics](https://coloradocrimestats.state.co.us/tops)
 - Urban/rural county classification from the Colorado Department of Local Affairs (DOLA)  
 
 **Tools Used:**  
