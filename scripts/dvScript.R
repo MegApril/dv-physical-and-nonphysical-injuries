@@ -2,7 +2,7 @@
 # Domestic Violence Injury Type Trends Analysis (CO, 2020–2024)
 # ------------------------------------------------------------------
 
-install.packages("ggrepel")  # (only needed once)
+install.packages("ggrepel")  #
 # 1. Load required libraries
 library(tidyverse)
 library(janitor)
@@ -114,7 +114,7 @@ ggplot(injury_trend_top5, aes(x = year, y = total_injuries,
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 9))
 # ------------------------------------------------------------------
-# 9. Faceted Line Charts: One Panel per Top Injury Type
+# 9. Faceted Line Charts: One Panel per Top Five Injury Type
 # ------------------------------------------------------------------
 
 # Ensure all year-injury combinations exist
