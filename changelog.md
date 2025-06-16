@@ -1,6 +1,20 @@
 ## Changelog
 
-### 2025-06-16 
+### 2025-06-16
+#### Added
+- New dvScriptUrbanSuburban.R script to analyze urban vs rural domestic violence injury patterns (2020–2024).
+- Created faceted line plots showing percent composition of injury types within Urban and Rural areas across time.
+- Logic to collapse rural-related designations ("rural", "rural resort", "rural resort municipalities") under unified "Rural" classification.
+- Injury type facet panels ordered by maximum percentage observed across years to highlight most prevalent injuries.
+
+#### Updated
+- Reshaped all county injury datasets from wide to long format for compatibility with urban/rural breakdowns.
+- Standardized county name formatting to ensure successful joins with classification data.
+- Removed "All Types of Injury" from facet plots to focus on individual injury types only.
+
+---
+
+### 2025-06-15 
 
 #### Added
 - Faceted line plots (Step 9) showing separate panels for each of the top 5 injury types across 2020–2024.
@@ -12,7 +26,7 @@
 
 ---
 
-### 2025-06-15
+### 2025-06-14
 
 #### Fixed
 - Corrected Top 5 injury types to be based on total injuries across all years, not just most frequent categories by row count.
