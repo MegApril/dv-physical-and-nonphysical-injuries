@@ -1,20 +1,29 @@
 ## Changelog
 
-### 2025-06-16
+### 2025-06-16 
 
 #### Added
-- Faceted line plots (Step 9) to visualize individual trends for top 5 injury types across 2020–2024.
-- `complete()` step to fill in missing year-injury combinations with zero counts, ensuring consistency in visualizations.
+- Faceted line plots (Step 9) showing separate panels for each of the top 5 injury types across 2020–2024.
+- `complete()` logic to fill missing injury_type/year combinations with zeroes.
 
 #### Updated
-- Top 5 injury types are now calculated based on total injuries across all years, rather than within-year frequencies.
-- Line plots use both `color` and `linetype` aesthetics for colorblind accessibility.
-- All faceted y-axes now begin at zero using `scale_y_continuous(limits = c(0, NA))` for visual comparability.
+- All y-axes in faceted plots now start at 0 using `scale_y_continuous(limits = c(0, NA))`.
+- Refined aesthetics in facet plots: removed legend, bold facet labels, and applied color + linetype styles for accessibility.
+
+---
+
+### 2025-06-15
 
 #### Fixed
-- Prior issue where some injury types (e.g., “Possible Internal Injury”) were excluded due to inconsistent casing or whitespace.
-- Missing year labels in facet plots due to incomplete injury-year combinations.
+- Corrected Top 5 injury types to be based on total injuries across all years, not just most frequent categories by row count.
+- Cleaned and normalized `injury_type` values (case and whitespace) to consolidate duplicates (e.g., "None", " none", "NONE").
+- Line plot for top 5 injuries now uses `color` and `linetype` together for colorblind-friendly accessibility.
 
+#### Added
+- Bar chart summarizing total injuries by type with count + percentage labels.
+- Year-by-injury trend line chart using cleaned top 5 injuries.
+
+---
 
 ### 2025-06-13 
 #### Added
@@ -26,6 +35,9 @@
 
 #### Investigating
 - Row count discrepancy noted between expected (3,015) and actual (2,880) entries in injury dataset. Potential causes: `NA` filtering, preprocessing steps, or metadata issues. Issue logged for follow-up.
+
+---
+
 
 ### 2025-06-12 
 #### Removed:
@@ -40,6 +52,9 @@
     - DV_Injury_Type_2022_CO_Counties.csv
     - DV_Injury_Type_2023_CO_Counties.csv
     - DV_Injury_Type_2024_CO_Counties.csv
+
+---
+
 ### 2025-06-11
   - Created initial README structure with project goal and questions
   - Manually categorized county using data from [Colorado DOLA](https://cdola.colorado.gov/colorado-community-classification)
