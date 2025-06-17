@@ -1,9 +1,9 @@
 # Exploring Domestic Violence Injuries in Colorado (2020–2024)  
 ## Urban vs Rural Disparities in Physical and Non-Physical Harm
 
-A relatively small number of domestic violence cases in Colorado report physical injuries. The majority are labeled as either **“None”** or **“Apparent Minor Injury.”** This project investigates whether these patterns differ across urban and rural counties and what this may suggest about **coercive control, underreporting, or systemic disparities in response.**
+Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either **“None”** or **“Apparent Minor Injury.”** This project investigates whether these patterns differ across urban and rural counties and what this may suggest about **coercive control, underreporting, or systemic disparities in response.**
 
-The analysis merges DV injury data with county classification metadata to explore geographic and temporal differences. Trends are visualized using bar graphs, faceted line plots, and urban/rural comparisons. Insights are drawn from five years of data (2020–2024).
+The analysis merges DV injury data with county classification data to explore geographic differences. Trends are visualized using bar graphs, faceted line plots, and urban/rural comparisons. Insights are drawn from five years of data (2020–2024).
 
 ---
 
@@ -16,8 +16,8 @@ The analysis merges DV injury data with county classification metadata to explor
 
 ## Data & Tools  
 **Data Sources:**  
-- 2020–2024 Colorado DV injury type CSVs [colorado crime statistics](https://coloradocrimestats.state.co.us/tops)
-- Urban/rural county classification from the Colorado Department of Local Affairs (DOLA)  
+- 2020–2024 Colorado DV injury type CSVs [Colorado Crime Statistics](https://coloradocrimestats.state.co.us/tops)
+- Urban/rural county classification from the [Colorado Department of Local Affairs](https://cdola.colorado.gov/colorado-community-classification)  
 
 **Tools Used:**  
 - R: `tidyverse`, `janitor`, `forcats`, `ggplot2`, `ggrepel`  
@@ -27,7 +27,7 @@ The analysis merges DV injury data with county classification metadata to explor
 
 ## Summary of Methods  
 - Cleaned and reshaped wide-format injury data using `pivot_longer()`  
-- Merged counties with manually classified urban/rural categories  
+- Merged counties from Colorado Crime Statistics with urban/rural categorization  
 - Used `complete()` to fill missing combinations of injury type and year  
 - Aggregated totals by injury type and created accessible, colorblind-friendly visualizations  
 - Compared urban vs rural trends across top injury types using faceted plots
@@ -38,12 +38,12 @@ The analysis merges DV injury data with county classification metadata to explor
 
 1. **Aggregate Injury Types**  
    - Apparent Minor Injury and None were the most frequent reported injuries  
-   - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as emotional abuse, coercion, or psychological control
+   - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control according to the definition of domestic violence from the [Denver District Attorney Website](https://www.denverda.org/domestic-violence/) and the [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
 
 2. **Top 5 Injury Types Over Time**  
    - Apparent Minor Injury remained consistent  
    - Internal Injuries trended slightly upward  
-   - “None” grew steadily — reinforcing the need to account for invisible trauma
+   - “None” grew steadily based on all counties 
 
 3. **Faceted Trends (Top 5 Injuries)**  
    - Disaggregated trendlines offer clarity on injury-type-specific patterns  
@@ -57,19 +57,19 @@ The analysis merges DV injury data with county classification metadata to explor
 ---
 
 ## Key Insights  
-- **Psychological Abuse Is Often Invisible**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves no physical injuries, yet these cases still involve harm.
+- **Some Abuse Is Often Invisible**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves no physical injuries, yet these cases still involve harm.
 - **Geographic Disparities Exist**: Urban areas consistently reported more injuries, but some high-severity categories rose in rural areas.
 - **Data Gaps Required Completion**: Many county-year combinations were missing; we used `tidyr::complete()` to fill them and improve comparison validity.
 
 ---
 
 ## Why It Matters  
-Injury reports in DV cases are not just physical—they are environmental too. This analysis helps recognize non-physical abuse, geographic inequities, and systemic blind spots. These insights may support more equitable public health interventions, reporting practices, and victim services. It is also important to note that given the nature of domestic violence, there are likely many cases that are not reported.
+Injury reports in DV cases are not just physical—they are also social, environmental and cultural problems. This analysis helps recognize non-physical abuse, geographic inequities, and systemic blind or ambiguous spots. These insights may support more equitable public health interventions, reporting practices, and victim services. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
 
 ---
 
 ## Potential Bias, Flaws, and Next Steps  
-- Add population data to compute **per capita rates** for rural/urban comparisons  
+- Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' may refer to in police reports
+- Add population data to compute **per capita rates** for clearer and more equitable rural/urban comparisons  
 - Merge in **demographic data** (age, gender, race)  
 - Join with **outcome data** (e.g., arrests, charges, protection orders)  
-- Automate annual update pipeline for **real-time monitoring**
