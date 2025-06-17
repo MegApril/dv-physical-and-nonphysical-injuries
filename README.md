@@ -60,12 +60,12 @@ The analysis merges DV injury data with county classification data to explore ge
 ## Key Insights  
 - **Some Abuse Is Unseen or Invisible Altogether**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves unseen injuries
 - **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries, but some high-severity categories rose in rural areas. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties
-- **Data Gaps Required Completion**: Many county-year combinations were missing; we used `tidyr::complete()` to fill them and improve comparison validity.
+- **Signifigant Ambiguity is Present**: Minor Injury, None and Possible Internal Injury as the top 3 reported injuries show a lack of specifity and may warrant further analysis for why reporting is not more clear
 
 ---
 
 ## Why It Matters  
-Injury reports in DV cases are not just physical—they are also social, environmental and cultural problems. This analysis helps recognize non-physical abuse, geographic inequities, and systemic blind or ambiguous spots. These insights may support more equitable public health interventions, reporting practices, and victim services. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
+Injury reports in DV cases are not only physical. They are also social, environmental and cultural issues impacting society and next generations. This analysis helps recognize non-physical abuse, geographic inequities, and systemic blind or ambiguous spots. These insights may support more equitable public health interventions, reporting practices, and victim services. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
 
 ---
 
