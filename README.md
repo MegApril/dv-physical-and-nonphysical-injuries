@@ -57,8 +57,8 @@ The analysis merges DV injury data with county classification data to explore ge
 ---
 
 ## Key Insights  
-- **Some Abuse Is Often Invisible**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves no physical injuries, yet these cases still involve harm.
-- **Geographic Disparities Exist**: Urban areas consistently reported more injuries, but some high-severity categories rose in rural areas.
+- **Some Abuse Is Unseen or Invisible Altogether**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves unseen injuries
+- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries, but some high-severity categories rose in rural areas. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties
 - **Data Gaps Required Completion**: Many county-year combinations were missing; we used `tidyr::complete()` to fill them and improve comparison validity.
 
 ---
