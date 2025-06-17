@@ -38,7 +38,8 @@ The analysis merges DV injury data with county classification data to explore ge
 
 1. **Aggregate Injury Types**  
    - Apparent Minor Injury and None were the most frequent reported injuries  
-   - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control according to the definition of domestic violence from the [Denver District Attorney Website](https://www.denverda.org/domestic-violence/) and the [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
+   - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
+      - These examples are according to the definition of domestic violence from the [Denver District Attorney Website](https://www.denverda.org/domestic-violence/) and the [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
 
 2. **Top 5 Injury Types Over Time**  
    - Apparent Minor Injury remained consistent  
