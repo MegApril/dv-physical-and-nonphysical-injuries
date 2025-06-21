@@ -27,8 +27,9 @@ The analysis merges DV injury data with county classification data to explore ge
 ---
 
 ## Summary of Methods  
+- Removed metadata from csv files with excel prior data preparation using R
 - Cleaned and reshaped wide-format injury data using `pivot_longer()`  
-- Merged counties from Colorado Crime Statistics with urban/rural categorization  
+- Merged counties from Colorado Crime Statistics with urban and rural categorizations
 - Used `complete()` to fill missing combinations of injury type and year  
 - Aggregated totals by injury type and created accessible, colorblind-friendly visualizations  
 - Compared urban vs rural trends across top injury types using faceted plots
