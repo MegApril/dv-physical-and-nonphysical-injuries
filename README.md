@@ -42,24 +42,20 @@ The analysis merges DV injury data with county classification data to explore ge
 ### **Total Injuries Reported Across All Years (2020-2024)** 
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
    - Apparent Minor Injury and None were the most frequent reported injuries
-   - Apparent Minor Injury accounted for over 50% of reporgs while “None” accounted for over 30% of reports suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
+   - Apparent Minor Injury accounted for over 50% of reporgs while “None” accounted for over 30% of reports suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control
       - Taken from the definitions of domestic violence from [Denver District Attorney](https://www.denverda.org/domestic-violence/) and [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
 ---
-### **Top Five Injury Types By Year** 
-![**Top 5 Injury Types Over Time**](/outputs/dvLineGraphTopFive.png)
-   - Apparent Minor Injury remained consistent  
-   - Internal Injuries trended slightly upward  
-   - “None” grew steadily based on all counties 
----
-**Injuries By Type** 
+### **Top 5 Injuries By Type** 
 ![**Faceted Trends (Top 5 Injuries)**](/outputs/dvTopFiveFaceted.png)
-   - Trendlines offer clarity on injury-type-specific patterns  
-   - Some types (e.g., Unconsciousness) declined, while others (e.g., Possible Internal Injury) rose
+   - Apparent Minor Injury remained the top injury reported across all years from 2020 - 2024 
+   - Possible Internal Injuries, and None trended upward with the largest upward trend in possible internal injury
+   - Other Major Injury had a stark upward trend from 2020 - 2021, but has gone back down, reflecting a similar value to 2020 in 2024.
+   - Unconsciousness has steadily declined since 2020
 ---
 ### **Urban vs Rural Differences**
 ![**Urban vs Rural Differences**](/outputs/urbanVsRuralPlots.png) 
-   - Rural counties showed **relatively larger increases** in internal injuries, lacerations, and broken bones — possibly reflecting delayed care, isolation, or lower support access  
-   - Graphs reflect **percent of total injuries by geography**, but do not adjust for population size. Future versions should explore per capita normalization to better account for population differences between rural and urban areas.
+   - Rural counties surpassed percentages of total injuries in other major injury, unconsciousneess, severe laceration and loss of teeth compared to urban countiees.
+   - Graphs reflect **percent of total injuries based on injury type in urban or suburban counties** to account for population differences.
 ---
 
 ## Key Insights  
@@ -78,4 +74,5 @@ Injuries in DV cases are not only physical. There seems to be social and psychol
 - Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' may refer to in police reports
 - Add population data to compute **per capita rates** for clearer rural/urban comparisons  
 - Merge in **demographic data** (age, gender, race, socio-economic status)  
-- Join with **outcome data** (e.g., arrests, charges, protection orders)  
+- Join with **outcome data** (e.g., arrests, charges, protection orders)
+- Urban vs Rural Differences future versions should explore per capita normalization to better account for population differences between rural and urban areas.
