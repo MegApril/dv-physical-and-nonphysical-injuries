@@ -2,7 +2,7 @@
 # Domestic Violence Injury Type Trends Analysis (CO, 2020–2024)
 # ------------------------------------------------------------------
 
-install.packages("ggrepel")  #
+install.packages("ggrepel") 
 # 1. Load required libraries
 library(tidyverse)
 library(janitor)
