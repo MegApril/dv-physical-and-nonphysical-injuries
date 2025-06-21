@@ -16,13 +16,14 @@ The analysis merges DV injury data with county classification data to explore ge
 
 ## Data & Tools  
 **Data Sources:**  
-- 2020–2024 Colorado DV injury type CSVs [Colorado Crime Statistics](https://coloradocrimestats.state.co.us/tops)
-- Urban/rural county classification from the [Colorado Department of Local Affairs](https://cdola.colorado.gov/colorado-community-classification)  
+- 2020–2024 Colorado DV injury type CSVs taken from [Colorado Crime Statistics](https://coloradocrimestats.state.co.us/tops)
+  - [Raw Data](/raw_data)
+- Urban/rural county classification from the [Colorado Department of Local Affairs](https://cdola.colorado.gov/colorado-community-classification)
+  -[External Data](/external_data)
 
 **Tools Used:**  
-- R: `tidyverse`, `janitor`, `forcats`, `ggplot2`, `ggrepel`  
-- GitHub for version control, changelog tracking  
-
+- R for data cleaning can be found [here.](/scripts/dvScript.R)
+- R for data visualizations can be found [here.](scripts/RuralUrbanPlots.R)
 ---
 
 ## Summary of Methods  
@@ -36,31 +37,33 @@ The analysis merges DV injury data with county classification data to explore ge
 
 ## Visualizations
 
-1. **Aggregate Injury Types**  
-   - Apparent Minor Injury and None were the most frequent reported injuries  
+### **Total Injuries Reported Across All Years (2020-2024)** 
+![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
+   - Apparent Minor Injury and None were the most frequent reported injuries.
    - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
       - These examples are according to the definition of domestic violence from the [Denver District Attorney Website](https://www.denverda.org/domestic-violence/) and the [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
-
-2. **Top 5 Injury Types Over Time** 
+---
+### **Top Five Injury Types By Year)** 
+![**Top 5 Injury Types Over Time**](/outputs/dvLineGraphTopFive.png)
    - Apparent Minor Injury remained consistent  
    - Internal Injuries trended slightly upward  
    - “None” grew steadily based on all counties 
-
-3. **Faceted Trends (Top 5 Injuries)**  
-   - Disaggregated trendlines offer clarity on injury-type-specific patterns  
+---
+**Injuries By Type** 
+![**Faceted Trends (Top 5 Injuries)**](/outputs/dvTopFiveFaceted.png)
+   - Trendlines offer clarity on injury-type-specific patterns  
    - Some types (e.g., Unconsciousness) declined, while others (e.g., Possible Internal Injury) rose
-
-4. **Urban vs Rural Differences**  
+---
+![**Urban vs Rural Differences**](/outputs/urbanVsRuralPlots.png)
    - Urban counties reported higher total injuries  
    - Rural counties showed **relatively larger increases** in internal injuries, lacerations, and broken bones — possibly reflecting delayed care, isolation, or lower support access  
    - Graphs reflect **percent of total injuries by geography**, but do not adjust for population size. Future iterations should explore per capita normalization to better account for rural population differences.
-
 ---
 
 ## Key Insights  
-- **Some Abuse Is Unseen or Invisible Altogether**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV often leaves unseen injuries
-- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries, but some high-severity categories rose in rural areas. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties
-- **Signifigant Ambiguity is Present**: Minor Injury, None and Possible Internal Injury as the top 3 reported injuries show a lack of specifity and may warrant further analysis for why reporting is not more clear
+- **Some Injuries are Unseen or Invisible Altogether**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV includes both violent and non-violent crime.
+- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries. Notably, some high-severity categories rose in rural areas. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
+- **Signifigant Ambiguity is Present**: Minor Injury, None and Possible Internal Injury are vague categories and show a lack of specifity. This may warrant further analysis for why reporting is not more clear
 
 ---
 
