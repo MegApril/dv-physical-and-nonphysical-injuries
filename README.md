@@ -45,7 +45,7 @@ The analysis merges DV injury data with county classification data to explore ge
    - Apparent Minor Injury accounted for over 50% of reporgs while “None” accounted for over 30% of reports suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
       - Taken from the definitions of domestic violence from [Denver District Attorney](https://www.denverda.org/domestic-violence/) and [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
 ---
-### **Top Five Injury Types By Year)** 
+### **Top Five Injury Types By Year** 
 ![**Top 5 Injury Types Over Time**](/outputs/dvLineGraphTopFive.png)
    - Apparent Minor Injury remained consistent  
    - Internal Injuries trended slightly upward  
@@ -57,15 +57,14 @@ The analysis merges DV injury data with county classification data to explore ge
    - Some types (e.g., Unconsciousness) declined, while others (e.g., Possible Internal Injury) rose
 ---
 ### **Urban vs Rural Differences**
-![**Urban vs Rural Differences**](/outputs/urbanVsRuralPlots.png)
-   - Urban counties reported higher total injuries  
+![**Urban vs Rural Differences**](/outputs/urbanVsRuralPlots.png) 
    - Rural counties showed **relatively larger increases** in internal injuries, lacerations, and broken bones — possibly reflecting delayed care, isolation, or lower support access  
    - Graphs reflect **percent of total injuries by geography**, but do not adjust for population size. Future versions should explore per capita normalization to better account for population differences between rural and urban areas.
 ---
 
 ## Key Insights  
 - **Some Injuries are Unseen**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV includes both violent and non-violent crime.
-- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries. Notably, violent injuries rose in rural areas while . See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
+- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries. However, violent injuries rose in rural areas while . See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
 - **Signifigant Ambiguity is Present**: Minor Injury, None and Possible Internal Injury are vague categories and show a lack of specifity. This may warrant further analysis for what exactly is included in these categories.
 
 ---
