@@ -22,6 +22,7 @@ The analysis merges DV injury data with county classification data to explore ge
   - [External Data](/external_data)
 
 **Tools Used:**  
+- Excel for manual removal of metadata
 - R for data cleaning can be found [here.](/scripts/dvScript.R)
 - R for data visualizations can be found [here.](scripts/RuralUrbanPlots.R)
 ---
