@@ -23,8 +23,8 @@ The analysis merges DV injury data with county classification data to explore ge
 
 **Tools Used:**  
 - Excel for manual removal of metadata
-- R for data cleaning can be found [here.](/scripts/dvScript.R)
-- R for data visualizations can be found [here.](scripts/RuralUrbanPlots.R)
+- R for data cleaning and plots can be found [here](/scripts/dvScript.R)
+- R for data comparisons between urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R)
 ---
 
 ## Summary of Methods  
@@ -41,8 +41,8 @@ The analysis merges DV injury data with county classification data to explore ge
 
 ### **Total Injuries Reported Across All Years (2020-2024)** 
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
-   - Apparent Minor Injury and None were the most frequent reported injuries.
-   - “None” accounted for over **30%** of reports — suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
+   - Apparent Minor Injury and None were the most frequent reported injuries
+   - Apparent Minor Injury accounted for over 50% of reporgs while “None” accounted for over 30% of reports suggesting a large number of **non-physical harms**, such as economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
       - Taken from the definitions of domestic violence from [Denver District Attorney](https://www.denverda.org/domestic-violence/) and [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
 ---
 ### **Top Five Injury Types By Year)** 
