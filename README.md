@@ -1,16 +1,18 @@
 # Exploring Domestic Violence Injuries in Colorado (2020–2024)  
 ## Urban vs Rural Disparities in Physical and Non-Physical Harm
 
-Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either “None” or “Apparent Minor Injury.” This project investigates whether these patterns differ across urban and rural counties and what this may suggest about **coercive control, underreporting, or systemic disparities in response.
-
-The analysis merges DV injury data with county classification data to explore geographic differences. Trends are visualized using bar graphs, faceted line plots, and urban/rural comparisons. Insights are drawn from five years of data (2020–2024).
+In local news, domestic violence and how the community is responding has been a major area of discussion in Colorado. Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either “None” or “Apparent Minor Injury.” This project investigates whether these patterns differ across urban and rural counties and what this may suggest about what the way these crimes are changing over time.
 
 ---
 
-## Key Questions  
-- Do injury type patterns differ between urban and rural counties?  
-- What injury types are most frequently reported, and how have they changed from 2020 to 2024?  
-- What does the prevalence of 'Apparent Minor Injury' and “None” as the top injury types signal?
+## Key Questions and Quick Insights
+- Do injury type patterns differ between urban and rural counties?
+  - Yes. As we can see in the [top 3 injuries graph,](#Top-3-DV-Injuries-by-Percent-Within-Area-Type) 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in Rural areas is 'Other Major Injury', and in Urban areas it is 'Possible Internal Injury.'
+- What injury types are most frequently reported, and how have they changed from 2020 to 2024?
+  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' This is consistent across all years from 2020 - 2024.
+  - The third top injury report differs from rural to urban counties. We can see in the [top 5 injuries graph,](#top-five-injuries-by-type) that 'Apparent Minor Injuries' decreased when comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
+- What does the prevalence of 'Apparent Minor Injury,' and “None” as the top injury types signal?
+  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction which is outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
 
 ---
 
@@ -18,13 +20,13 @@ The analysis merges DV injury data with county classification data to explore ge
 **Data Sources:**  
 - 2020–2024 Colorado DV injury type CSVs taken from [Colorado Crime Statistics](https://coloradocrimestats.state.co.us/tops)
   - [Raw Data](/raw_data)
-- Urban/rural county classification from the [Colorado Department of Local Affairs](https://cdola.colorado.gov/colorado-community-classification)
+- Urban vs Rural county classification from the [Colorado Department of Local Affairs](https://cdola.colorado.gov/colorado-community-classification)
   - [External Data](/external_data)
 
 **Tools Used:**  
 - Excel for manual removal of metadata
-- R for data cleaning and plots can be found [here](/scripts/dvScript.R)
-- R for data comparisons between urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R)
+- R scripts for plots can be found [here](/scripts/dvScript.R).
+- R for line graphs and faceted line graphs comparing urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R).
 ---
 
 ## Summary of Methods  
@@ -39,7 +41,7 @@ The analysis merges DV injury data with county classification data to explore ge
 ## Visualizations
 
 ### **Top 3 DV Injuries by Percent Within Area Type**
-![Top 3 Injuries by Rural or Urban Categorization](/ouputs/topThreeByArea.png)
+![Top 3 Injuries by Rural or Urban Categorization](/outputs/topThreeByArea.png)
 
 ### **Total Injuries Reported Across All Years (2020-2024)** 
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
@@ -50,7 +52,7 @@ The analysis merges DV injury data with county classification data to explore ge
 ### **Top 5 Injuries By Type** 
 ![**Faceted Trends (Top 5 Injuries)**](/outputs/dvTopFiveFaceted.png)
    - Apparent Minor Injury remained the top injury reported across all years from 2020 - 2024 
-   - Possible Internal Injuries, and None trended upward with the largest upward trend in possible internal injury
+   - 'Possible Internal Injury', and 'None' trended upward with the largest upward trend in 'Possible Internal Injury'
    - Other Major Injury had a significant jump upward from 2020 - 2021
    - Unconsciousness has steadily declined since 2020
 ---
@@ -61,15 +63,18 @@ The analysis merges DV injury data with county classification data to explore ge
      - Ex: In 2020, 'Apparent Broken Bones' accounted for ~0.4% of all injuries in rural counties and ~0.6% of all injuries in urban counties.
 ---
 
-## Key Insights
+## Key Takeaway Summary
 Key Question Analysis:
 - Do injury type patterns differ betwen urban and rural counties?
-  - 
+
 - What injury types are most frequently reported, and how have they changed from 2020 - 2024?
-- What does the prevalence of 'Apparent Minor Injury' and 'Nonee' as the top injury types signal?
+
+- What does the prevalence of 'Apparent Minor Injury' and 'None' as the top injury types signal?
+  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction which is outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
+
 - Some Injuries are Unseen: The dominance of “None” and 'Apparent Minor Injury' as the top two injury types suggest that DV includes both violent and non-violent crime
-- Geographic Disparities Exist: Naturally, urban areas consistently reported more injuries. However, rural areas saw a much largere variancee between years for violent injuries. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
-- Signifigant Ambiguity is Present: Minor Injury, None and Possible Internal Injury are vague categories and show a lack of specifity. This may warrant further analysis for what exactly is included in these categories.
+
+- Signifigant Ambiguity is Present: 'Minor Injury', 'None', and 'Possible Internal Injury' are vague categories and show a lack of specifity.
 
 ---
 
@@ -78,8 +83,7 @@ Injuries in DV cases are not only physical. There seems to be social and psychol
 
 ---
 
-## Potential Bias, Flaws, and Next Steps  
+## Potential Bias, and Next Steps  
 - Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' and 'Apparent Minor Injury' may refer to in police reports
 - Merge in demographic data (age, gender, race, socio-economic status)  
-- Join with outcome data (arrests, charges, protection orders)
 - Urban vs Rural Differences: future versions should explore per capita normalization to better account for population differences between rural and urban areas.
