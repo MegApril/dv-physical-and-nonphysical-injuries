@@ -9,7 +9,7 @@ In local news, domestic violence cases and community responses is a major area o
   - Yes. In the [top 3 injuries graph](#Top-3-DV-Injuries-by-Percent-Within-Area-Type "Top 3 Rural and Urban Injuries Graph") 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in rural areas is 'Other Major Injury', and in urban areas it is 'Possible Internal Injury.'
 
 2. What injury types are most frequently reported, and how have they changed from 2020 to 2024?
-  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' View the aggregated graph showing all injuries from 2020 - 2024 [here](#total-injuries-reported-across-all-years "Total Injuries Reported from 2020-2024 Graph")
+  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' View the aggregated graph showing all injuries from 2020 - 2024 [here](#total-injuries-reported-across-all-years "Total Injuries Reported from 2020-2024 Graph").
   - The third top injury report differs from rural to urban counties with rural areas seeing 'Other Major Injury' as the third most reported, and urban areas seeing 'Possible Internal Injury' as the third most reported.
   - We can see in the [top 5 injuries graph](#top-five-injuries-by-type "Top 5 Injuries Graph") that 'Apparent Minor Injuries' decreased comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
 
@@ -47,7 +47,7 @@ In local news, domestic violence cases and community responses is a major area o
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
    - 'Apparent Minor Injury' and 'None' were the most frequently reported injuries.
    - 'Apparent Minor Injury' accounted for over 50% of reporgs while 'None' accounted for over 30% of reports which may suggest a large number of non-physical harms. While further analysis is needed, DV definitions list economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
-      - Taken from [Denver District Attorney](https://www.denverda.org/domestic-violence/) and [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse)
+      - Taken from [Denver District Attorney](https://www.denverda.org/domestic-violence/) and [Rocky Mountain Victim Law Center](https://www.rmvictimlaw.org/learn/legal-information/criminal/domestic-violence-domestic-abuse).
 
 ### **Top 5 Injuries By Type** 
 ![**Faceted Trends (Top 5 Injuries)**](/outputs/dvTopFiveFaceted.png)
@@ -64,7 +64,6 @@ In local news, domestic violence cases and community responses is a major area o
 
 ## Other Takeaways
 - Some injuries are unseen which is suggested by the dominance of 'None' and 'Apparent Minor Injury' as the top two injury types.
-
 - Signifigant ambiguity is present in documentation practices. 'Minor Injury', 'None', and 'Possible Internal Injury' are vague categories and show a lack of specifity.
 
 ---
@@ -75,6 +74,6 @@ DV injuries seem to include more than major physical injuries. This analysis hel
 ---
 
 ## Potential Bias, and Next Steps  
-- Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' and 'Apparent Minor Injury' may refer to in police reports
-- Merge in demographic data (age, gender, race, socio-economic status)  
+- Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' and 'Apparent Minor Injury' may refer to in police reports.
+- Merge in demographic data (age, gender, race, socio-economic status).
 - Urban vs Rural Differences: future versions should explore per capita normalization to better account for population differences between rural and urban areas.
