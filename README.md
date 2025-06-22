@@ -1,7 +1,7 @@
 # Exploring Domestic Violence Injuries in Colorado (2020–2024)  
 ## Urban vs Rural Disparities in Physical and Non-Physical Harm
 
-Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either **“None”** or **“Apparent Minor Injury.”** This project investigates whether these patterns differ across urban and rural counties and what this may suggest about **coercive control, underreporting, or systemic disparities in response.**
+Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either “None” or “Apparent Minor Injury.” This project investigates whether these patterns differ across urban and rural counties and what this may suggest about **coercive control, underreporting, or systemic disparities in response.
 
 The analysis merges DV injury data with county classification data to explore geographic differences. Trends are visualized using bar graphs, faceted line plots, and urban/rural comparisons. Insights are drawn from five years of data (2020–2024).
 
@@ -10,7 +10,7 @@ The analysis merges DV injury data with county classification data to explore ge
 ## Key Questions  
 - Do injury type patterns differ between urban and rural counties?  
 - What injury types are most frequently reported, and how have they changed from 2020 to 2024?  
-- What does the prevalence of "Apparent Minor Injury" and “None” as the top injury types signal?
+- What does the prevalence of 'Apparent Minor Injury' and “None” as the top injury types signal?
 
 ---
 
@@ -58,10 +58,15 @@ The analysis merges DV injury data with county classification data to explore ge
      - Ex: In 2020, 'Apparent Broken Bones' accounted for ~0.4% of all injuries in rural counties and ~0.6% of all injuries in urban counties.
 ---
 
-## Key Insights  
-- **Some Injuries are Unseen**: The dominance of “None” and "Apparent Minor Injury" as the top two injury types suggest that DV includes both violent and non-violent crime
-- **Geographic Disparities Exist**: Naturally, urban areas consistently reported more injuries. However, rural areas saw a much largere variancee between years for violent injuries. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
-- **Signifigant Ambiguity is Present**: Minor Injury, None and Possible Internal Injury are vague categories and show a lack of specifity. This may warrant further analysis for what exactly is included in these categories.
+## Key Insights
+Key Question Analysis:
+- Do injury type patterns differ betwen urban and rural counties?
+  - 
+- What injury types are most frequently reported, and how have they changed from 2020 - 2024?
+- What does the prevalence of 'Apparent Minor Injury' and 'Nonee' as the top injury types signal?
+- Some Injuries are Unseen: The dominance of “None” and 'Apparent Minor Injury' as the top two injury types suggest that DV includes both violent and non-violent crime
+- Geographic Disparities Exist: Naturally, urban areas consistently reported more injuries. However, rural areas saw a much largere variancee between years for violent injuries. See next steps for further analysis needs regarding more accurate comparisons between urban and rural counties.
+- Signifigant Ambiguity is Present: Minor Injury, None and Possible Internal Injury are vague categories and show a lack of specifity. This may warrant further analysis for what exactly is included in these categories.
 
 ---
 
@@ -71,8 +76,7 @@ Injuries in DV cases are not only physical. There seems to be social and psychol
 ---
 
 ## Potential Bias, Flaws, and Next Steps  
-- Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' may refer to in police reports
-- Add population data to compute **per capita rates** for clearer rural/urban comparisons  
-- Merge in **demographic data** (age, gender, race, socio-economic status)  
-- Join with **outcome data** (arrests, charges, protection orders)
-- Urban vs Rural Differences future versions should explore per capita normalization to better account for population differences between rural and urban areas.
+- Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' and 'Apparent Minor Injury' may refer to in police reports
+- Merge in demographic data (age, gender, race, socio-economic status)  
+- Join with outcome data (arrests, charges, protection orders)
+- Urban vs Rural Differences: future versions should explore per capita normalization to better account for population differences between rural and urban areas.
