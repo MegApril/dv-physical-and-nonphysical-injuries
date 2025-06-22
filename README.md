@@ -6,12 +6,12 @@ In local news, domestic violence cases and community responses is a major area o
 
 ## Key Questions and Quick Insights
 1. Do injury types differ between urban and rural counties?
-  - Yes. As we can see in the [top 3 injuries graph,](#Top-3-DV-Injuries-by-Percent-Within-Area-Type "Top 3 Rural and Urban Injuries Graph") 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in rural areas is 'Other Major Injury', and in urban areas it is 'Possible Internal Injury.'
+  - Yes. In the [top 3 injuries graph](#Top-3-DV-Injuries-by-Percent-Within-Area-Type "Top 3 Rural and Urban Injuries Graph") 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in rural areas is 'Other Major Injury', and in urban areas it is 'Possible Internal Injury.'
 
 2. What injury types are most frequently reported, and how have they changed from 2020 to 2024?
-  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' This is consistent across all years from 2020 - 2024.
+  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' View the aggregated graph showing all injuries from 2020 - 2024 [here](#total-injuries-reported-across-all-years "Total Injuries Reported from 2020-2024 Graph")
   - The third top injury report differs from rural to urban counties with rural areas seeing 'Other Major Injury' as the third most reported, and urban areas seeing 'Possible Internal Injury' as the third most reported.
-  - We can see in the [top 5 injuries graph,](#top-five-injuries-by-type "Top 5 Injuries Graph") that 'Apparent Minor Injuries' decreased comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
+  - We can see in the [top 5 injuries graph](#top-five-injuries-by-type "Top 5 Injuries Graph") that 'Apparent Minor Injuries' decreased comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
 
 3. What does the prevalence of 'Apparent Minor Injury,' and 'None' as the top injuries signal?
   - In order fully to answer this question, further analysis using machine learning could be a step in the right direction. Unfortunately, that analysis technique is currently outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
@@ -25,8 +25,9 @@ In local news, domestic violence cases and community responses is a major area o
 
 **Tools Used:**  
 - Excel for manual removal of metadata
-- R scripts for plots can be found [here](/scripts/dvScript.R).
+- R scripts for plots can be found [here](/scripts/dvScript.R)
 - R for line graphs and faceted line graphs comparing urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R).
+- R for top three urban and rural injuries can be found [here]()
 
 ## Summary of Methods  
 - Extracted data from Colorado Crime Statistics and Colorado Department of Local Affairs
@@ -42,7 +43,7 @@ In local news, domestic violence cases and community responses is a major area o
 ![Top 3 Injuries by Rural or Urban Categorization](/outputs/topThreeByArea.png)
   - While the top two injury types remained the same in both urban and rural areas, the third most reported injury differed from 'Other Major Injury' in rural areas to 'Possible Internal Injury' in urban areas.
  
-### **Total Injuries Reported Across All Years (2020-2024)** 
+### **Total Injuries Reported Across All Years** 
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
    - 'Apparent Minor Injury' and 'None' were the most frequently reported injuries.
    - 'Apparent Minor Injury' accounted for over 50% of reporgs while 'None' accounted for over 30% of reports which may suggest a large number of non-physical harms. While further analysis is needed, DV definitions list economic abuse, forced isolation, stalking, harrasment/intimidation, or emotional/psychological control.
