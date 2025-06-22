@@ -1,20 +1,20 @@
-# Exploring Domestic Violence Injuries in Colorado (2020–2024)  
-## Urban vs Rural Comparison for Physical and Non-Physical Harm
-
+# Exploring Urban and Rural Domestic Violence Injuries in Colorado (2020–2024)
+## Background
 In local news, domestic violence cases and community responses is a major area of discussion. Across counties in Colorado, a minority of domestic violence cases report major physical injuries. The majority are categorized as 'None' or 'Apparent Minor Injury.' This project investigates whether these patterns differ across urban and rural counties and what this may suggest about how these crimes are changing over time.
 
 ---
 
 ## Key Questions and Quick Insights
-- Do injury type patterns differ between urban and rural counties?
-  - Yes. As we can see in the [top 3 injuries graph,](#Top-3-DV-Injuries-by-Percent-Within-Area-Type) 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in Rural areas is 'Other Major Injury', and in Urban areas it is 'Possible Internal Injury.'
-- What injury types are most frequently reported, and how have they changed from 2020 to 2024?
-  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' This is consistent across all years from 2020 - 2024.
-  - The third top injury report differs from rural to urban counties. We can see in the [top 5 injuries graph,](#top-five-injuries-by-type) that 'Apparent Minor Injuries' decreased when comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
-- What does the prevalence of 'Apparent Minor Injury,' and “None” as the top injury types signal?
-  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction. Unfortunately, that analysis is currently outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
+1. Do injury types differ between urban and rural counties?
+  - Yes. As we can see in the [top 3 injuries graph,](#Top-3-DV-Injuries-by-Percent-Within-Area-Type "Top 3 Rural and Urban Injuries Graph") 'Apparent Minor Injury' and 'None' remained the top two injury types reported in both urban and rural areas. However, the third most reported injury type in rural areas is 'Other Major Injury', and in urban areas it is 'Possible Internal Injury.'
 
----
+2. What injury types are most frequently reported, and how have they changed from 2020 to 2024?
+  - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' This is consistent across all years from 2020 - 2024.
+  - The third top injury report differs from rural to urban counties with rural areas seeing 'Other Major Injury' as the third most reported, and urban areas seeing 'Possible Internal Injury' as the third most reported.
+  - We can see in the [top 5 injuries graph,](#top-five-injuries-by-type "Top 5 Injuries Graph") that 'Apparent Minor Injuries' decreased comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
+
+3. What does the prevalence of 'Apparent Minor Injury,' and 'None' as the top injuries signal?
+  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction. Unfortunately, that analysis technique is currently outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
 
 ## Data & Tools  
 **Data Sources:**  
@@ -27,14 +27,13 @@ In local news, domestic violence cases and community responses is a major area o
 - Excel for manual removal of metadata
 - R scripts for plots can be found [here](/scripts/dvScript.R).
 - R for line graphs and faceted line graphs comparing urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R).
----
 
 ## Summary of Methods  
-- Removed metadata from csv files with excel prior data preparation using R
+- Extracted data from Colorado Crime Statistics and the Colorado Department of Local Affairs
+- Removed metadata from csv files with excel prior data transformation using R
 - Cleaned and reshaped wide-format injury data using `pivot_longer()`  
 - Merged counties from Colorado Crime Statistics with urban and rural categorizations
-- Aggregated totals by injury type and created accessible, colorblind-friendly visualizations  
-- Compared urban vs rural trends across top injury types using faceted plots
+- Prepared analysis and visualizations using R
 
 ---
 
