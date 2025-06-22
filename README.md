@@ -39,7 +39,7 @@ The analysis merges DV injury data with county classification data to explore ge
 ## Visualizations
 
 ### **Top 3 DV Injuries by Percent Within Area Type**
-![Top 3 Injuries by Rural or Urban Categorization]()
+![Top 3 Injuries by Rural or Urban Categorization](/ouputs/topThreeByArea.png)
 
 ### **Total Injuries Reported Across All Years (2020-2024)** 
 ![Aggregated Injury Types Across](/outputs/dvBarGraphAggregate.png) 
