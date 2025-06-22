@@ -1,7 +1,7 @@
 # Exploring Domestic Violence Injuries in Colorado (2020–2024)  
-## Urban vs Rural Disparities in Physical and Non-Physical Harm
+## Urban vs Rural Comparison for Physical and Non-Physical Harm
 
-In local news, domestic violence and how the community is responding has been a major area of discussion in Colorado. Comparitvely, a minority of the number of domestic violence cases in Colorado report major physical injuries. The majority are labeled as either “None” or “Apparent Minor Injury.” This project investigates whether these patterns differ across urban and rural counties and what this may suggest about what the way these crimes are changing over time.
+In local news, domestic violence cases and community responses is a major area of discussion. Across counties in Colorado, a minority of domestic violence cases report major physical injuries. The majority are categorized as 'None' or 'Apparent Minor Injury.' This project investigates whether these patterns differ across urban and rural counties and what this may suggest about how these crimes are changing over time.
 
 ---
 
@@ -12,7 +12,7 @@ In local news, domestic violence and how the community is responding has been a 
   - Consistently, the top 2 injury types reported are: 'Apparent Minor Injury' and 'None.' This is consistent across all years from 2020 - 2024.
   - The third top injury report differs from rural to urban counties. We can see in the [top 5 injuries graph,](#top-five-injuries-by-type) that 'Apparent Minor Injuries' decreased when comparing 2020 to 2024, and 'None' increased comparing 2020 to 2024.
 - What does the prevalence of 'Apparent Minor Injury,' and “None” as the top injury types signal?
-  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction which is outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
+  - In order fully to answer this question, further analysis using machine learning could be a step in the right direction. Unfortunately, that analysis is currently outside the scope of this project. Training a naive bayesian model with text from police reports, witness statements and court documents may help narrow down the specifics of what is included in these broad categories using text based classification.
 
 ---
 
