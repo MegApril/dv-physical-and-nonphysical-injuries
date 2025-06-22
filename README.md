@@ -25,9 +25,9 @@ In local news, domestic violence cases and community responses is a major area o
 
 **Tools Used:**  
 - Excel for manual removal of metadata
-- R scripts for plots can be found [here](/scripts/dvScript.R)
+- R scripts for plots can be found [here](/scripts/dvScript.R).
 - R for line graphs and faceted line graphs comparing urban/suburban counties can be found [here](scripts/RuralUrbanPlots.R).
-- R for top three urban and rural injuries can be found [here](/scripts/topThreeInjuries.R)
+- R for top three urban and rural injuries can be found [here](/scripts/topThreeInjuries.R).
 
 ## Summary of Methods  
 - Extracted data from Colorado Crime Statistics and Colorado Department of Local Affairs
