@@ -9,12 +9,12 @@ library(janitor)
 library(forcats)
 library(ggrepel)
 
-# 1. Load and inspect a single year (for structure confirmation)
+# Load and inspect a single year (for structure confirmation)
 injury_2020 <- read_csv("metadataRemoved_DV_Injury_Type_2020_CO_Counties.csv") %>%
   clean_names()
 glimpse(injury_2020)
 
-# 2. Load and combine all 5 years of DV injury data (2020–2024)
+# Load and combine all 5 years of DV injury data (2020–2024)
 file_list <- list.files(
   path = ".",
   pattern = "metadataRemoved_DV_Injury_Type_\\d{4}_CO_Counties\\.csv",
@@ -27,7 +27,7 @@ injury_data <- file_list %>%
             clean_names() %>%
             mutate(year = str_extract(.x, "\\d{4}")))
 
-# 3. Reshape data from wide to long format
+# Reshape data from wide to long format
 injury_long <- injury_data %>%
   pivot_longer(
     cols = ends_with("_county"),
@@ -90,7 +90,7 @@ area_filtered <- area_percent_summary %>%
   filter(injury_type != "All Types Of Injury")
 
 # Determine max % observed for each injury type across all area-years
-# This will be used to order panels by prominence
+# Order panels by prominence
 injury_order <- area_filtered %>%
   group_by(injury_type) %>%
   summarise(max_percent = max(percent, na.rm = TRUE)) %>%
