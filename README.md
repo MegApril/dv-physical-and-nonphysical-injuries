@@ -1,6 +1,6 @@
 # Exploring Urban and Rural Domestic Violence Injuries in Colorado (2020–2024)
 ## Background
-In local news, domestic violence cases and community responses is a major area of discussion. Across counties in Colorado, a minority of domestic violence cases report major physical injuries. The majority are categorized as 'None' or 'Apparent Minor Injury.' This project investigates whether these patterns differ across urban and rural counties and what this may suggest about how these crimes are changing over time.
+In local news, domestic violence cases and community responses is a major area of discussion. Across counties in Colorado, a minority of domestic violence cases report major physical injuries. The majority are categorized as 'None' or 'Apparent Minor Injury.' This project investigates whether these patterns differ across urban and rural counties and what this may suggest about how these crimes are changing over time. For feedback, suggestions, or any other communication you can reach me with the information [here](#Contact-Info).
 
 ---
 
@@ -77,3 +77,7 @@ DV injuries seem to include more than major physical injuries. This analysis hel
 - Naive Bayes classification for determining text based keywords from case studies/police reports to understand what 'None' and 'Apparent Minor Injury' may refer to in police reports.
 - Merge in demographic data (age, gender, race, socio-economic status).
 - Urban vs Rural Differences: future versions should explore per capita normalization to better account for population differences between rural and urban areas.
+
+## Contact Info
+If you have thoughts, suggestions or feedback for a newbie please reach out to me at megghinton@gmail.com. 
+This is my first project after many, many attempts and I welcome feedback if there is anything incorrect or just odd in general.
