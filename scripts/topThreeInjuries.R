@@ -9,12 +9,12 @@ library(janitor)
 library(forcats)
 library(ggrepel)
 
-# 1. Load and inspect a single year (for structure confirmation)
+# Load and inspect a single year (for structure confirmation)
 injury_2020 <- read_csv("metadataRemoved_DV_Injury_Type_2020_CO_Counties.csv") %>%
   clean_names()
 glimpse(injury_2020)
 
-# 2. Load and combine all 5 years of DV injury data (2020–2024)
+# Load and combine all 5 years of DV injury data (2020–2024)
 file_list <- list.files(
   path = ".",
   pattern = "metadataRemoved_DV_Injury_Type_\\d{4}_CO_Counties\\.csv",
@@ -27,7 +27,7 @@ injury_data <- file_list %>%
             clean_names() %>%
             mutate(year = str_extract(.x, "\\d{4}")))
 
-# 3. Reshape data from wide to long format
+# Reshape data from wide to long format
 injury_long <- injury_data %>%
   pivot_longer(
     cols = ends_with("_county"),
@@ -38,7 +38,7 @@ injury_long <- injury_data %>%
   mutate(injury_type = str_trim(str_to_title(injury_type)))  # Normalize casing & whitespace
 
 # ------------------------------------------------------------------
-# 4. Add County Classification (Urban vs Rural Variants)
+# Add County Classification (Urban vs Rural Variants)
 # ------------------------------------------------------------------
 
 # Load classification and collapse rural-related categories
@@ -64,7 +64,7 @@ injury_classified <- injury_long %>%
   left_join(county_classification, by = "county")
 
 # ------------------------------------------------------------------
-# 5. Calculate Percent Composition of Injury Types Within Area Type
+# Calculate Percent Composition of Injury Types Within Area Type
 # ------------------------------------------------------------------
 
 area_percent_summary <- injury_classified %>%
@@ -82,7 +82,7 @@ print(area_percent_summary, n = 50)
 
 
 # ------------------------------------------------------------------
-# 6. Top 5 Injury Types by Percent (Urban vs Rural)
+# Top 5 Injury Types by Percent (Urban vs Rural)
 # ------------------------------------------------------------------
 
 top_5_injuries_by_percent <- area_percent_summary %>%
