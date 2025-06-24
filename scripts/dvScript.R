@@ -3,18 +3,18 @@
 # ------------------------------------------------------------------
 
 install.packages("ggrepel") 
-# 1. Load required libraries
+# Load required libraries
 library(tidyverse)
 library(janitor)
 library(forcats)  # for factor reordering
 library(ggrepel)
 
-# 2. Load and inspect a single year (for structure confirmation)
+# Load and inspect a single year (for structure understanding)
 injury_2020 <- read_csv("metadataRemoved_DV_Injury_Type_2020_CO_Counties.csv") %>%
   clean_names()
 glimpse(injury_2020)
 
-# 3. Load and combine all 5 years of DV injury data (2020–2024)
+# Load and combine all 5 years of DV injury data (2020–2024)
 file_list <- list.files(
   path = ".",
   pattern = "metadataRemoved_DV_Injury_Type_\\d{4}_CO_Counties\\.csv",
@@ -27,7 +27,7 @@ injury_data <- file_list %>%
             clean_names() %>%
             mutate(year = str_extract(.x, "\\d{4}")))
 
-# 4. Reshape data from wide to long format
+# Reshape data from wide to long format
 injury_long <- injury_data %>%
   pivot_longer(
     cols = ends_with("_county"),
@@ -37,18 +37,13 @@ injury_long <- injury_data %>%
   rename(injury_type = x1) %>%
   mutate(injury_type = str_trim(str_to_title(injury_type)))  # Normalize casing & whitespace
 
-# 5. Quick data exploration
+# Quick data exploration
 glimpse(injury_long)
 count(injury_long, year)
 count(injury_long, injury_type)
 
-# 6. Sanity check
-injury_long %>%
-  count(year, injury_type) %>%
-  print(n = Inf)
-
 # ------------------------------------------------------------------
-# 7. Bar Chart: Total Injuries by Type (2020–2024)
+# Bar Chart: Total Injuries by Type (2020–2024)
 # ------------------------------------------------------------------
 
 # Clean + summarize injury counts across all years (excluding aggregate)
@@ -59,7 +54,7 @@ injury_summary <- injury_long %>%
   mutate(percent = total_injuries / sum(total_injuries) * 100) %>%
   arrange(desc(total_injuries))
 
-# Capture total
+# Capture total injuries
 total_injuries_all <- sum(injury_summary$total_injuries)
 
 # Plot bar chart
@@ -76,7 +71,7 @@ ggplot(injury_summary, aes(x = reorder(injury_type, -total_injuries), y = total_
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 # ------------------------------------------------------------------
-# 8. Line Chart: Trends for Top 5 Injury Types Over Time
+# Line Chart: Trends for Top 5 Injury Types Over Time
 # ------------------------------------------------------------------
 
 # Recalculate top 5 injury types from full dataset (cleaned)
@@ -114,7 +109,7 @@ ggplot(injury_trend_top5, aes(x = year, y = total_injuries,
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 9))
 # ------------------------------------------------------------------
-# 9. Faceted Line Charts: One Panel per Top Five Injury Type
+# Faceted Line Charts: One Panel per Top Five Injury Type
 # ------------------------------------------------------------------
 
 # Ensure all year-injury combinations exist
