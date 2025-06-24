@@ -69,7 +69,7 @@ In local news, domestic violence cases and community responses is a major area o
 ---
 
 ## Why It Matters  
-DV injuries seem to include more than major physical injuries. This analysis helps recognize this and geographic status may have inequities. These insights supports more equitable public health interventions, reporting practices, which could lead to pinpointing where victim services and advocacy needs exist. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
+DV injuries seem to include more than major physical injuries. This analysis helps recognize this and geographic status may also have relevance. These insights support more equitable public health interventions, and reporting practices. This could lead to identifying where victim services and advocacy needs exist. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
 
 ---
 
