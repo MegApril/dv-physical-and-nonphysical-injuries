@@ -1,4 +1,7 @@
 # Exploring Urban and Rural Domestic Violence Injuries in Colorado (2020–2024)
+
+## Updates
+- R scripts will be changed to .rmd for ease or running chunks of code  
 ## Background
 In local news, domestic violence cases and community responses is a major area of discussion. Across counties in Colorado, a minority of domestic violence cases report major physical injuries. The majority are categorized as 'None' or 'Apparent Minor Injury.' This project investigates whether these patterns differ across urban and rural counties and what this may suggest about how these crimes are changing over time. For feedback, suggestions, or any other communication you can reach me with the information [here](#Contact-Info).
 
