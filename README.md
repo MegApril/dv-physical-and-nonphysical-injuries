@@ -78,7 +78,7 @@ For feedback, suggestions, or any other communication you can reach me with the 
 ---
 
 ## Why It Matters  
-DV injuries seem to include more than major physical injuries. This analysis helps recognize this and geographic status may also have relevance. These insights support more equitable public health interventions, and reporting practices. This could lead to identifying where victim services and advocacy needs exist. It is also important to note that given the nature of domestic violence and abuse, there are likely many cases that are not reported.
+- Domestic Violence injuries include more than major physical injuries. This analysis helps recognize this. It also shows that geographic status may have relevance. These insights support more equitable public health interventions and reporting practices. This could lead to identifying where victim services and advocacy needs exist. It is also important to note that, given the nature of domestic violence and abuse, there are likely many cases that are not reported.
 
 ---
 
