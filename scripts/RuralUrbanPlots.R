@@ -1,7 +1,6 @@
 
-# ------------------------------------------------------------------
+
 # Domestic Violence Injury Type Trends Analysis (CO, 2020–2024)
-# ------------------------------------------------------------------
 
 # Load required libraries
 library(tidyverse)
@@ -37,9 +36,9 @@ injury_long <- injury_data %>%
   rename(injury_type = x1) %>%
   mutate(injury_type = str_trim(str_to_title(injury_type)))  # Normalize casing & whitespace
 
-# ------------------------------------------------------------------
+
 # 4. Add County Classification (Urban vs Rural Variants)
-# ------------------------------------------------------------------
+
 
 # Load classification and collapse rural-related categories
 county_classification <- read_csv("county_classification.csv") %>%
@@ -63,9 +62,9 @@ injury_classified <- injury_long %>%
   ) %>%
   left_join(county_classification, by = "county")
 
-# ------------------------------------------------------------------
+
 # 5. Calculate Percent Composition of Injury Types Within Area Type
-# ------------------------------------------------------------------
+
 
 area_percent_summary <- injury_classified %>%
   filter(!is.na(area_type)) %>%
@@ -81,9 +80,9 @@ area_percent_summary <- injury_classified %>%
 print(area_percent_summary, n = 50)
 
 
-# ------------------------------------------------------------------
+
 # 6. Plot: Percent Composition of Injury Types Within Area Type
-# ------------------------------------------------------------------
+
 
 # Filter out aggregate "All Types Of Injury" to focus on individual types
 area_filtered <- area_percent_summary %>%
