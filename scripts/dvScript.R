@@ -1,6 +1,5 @@
-# ------------------------------------------------------------------
 # Domestic Violence Injury Type Trends Analysis (CO, 2020–2024)
-# ------------------------------------------------------------------
+
 
 install.packages("ggrepel") 
 # Load required libraries
@@ -42,9 +41,7 @@ glimpse(injury_long)
 count(injury_long, year)
 count(injury_long, injury_type)
 
-# ------------------------------------------------------------------
 # Bar Chart: Total Injuries by Type (2020–2024)
-# ------------------------------------------------------------------
 
 # Clean + summarize injury counts across all years (excluding aggregate)
 injury_summary <- injury_long %>%
@@ -70,9 +67,7 @@ ggplot(injury_summary, aes(x = reorder(injury_type, -total_injuries), y = total_
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-# ------------------------------------------------------------------
 # Line Chart: Trends for Top 5 Injury Types Over Time
-# ------------------------------------------------------------------
 
 # Recalculate top 5 injury types from full dataset (cleaned)
 top5 <- injury_summary %>%
@@ -108,9 +103,9 @@ ggplot(injury_trend_top5, aes(x = year, y = total_injuries,
   theme(legend.position = "bottom",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 9))
-# ------------------------------------------------------------------
+
 # Faceted Line Charts: One Panel per Top Five Injury Type
-# ------------------------------------------------------------------
+
 
 # Ensure all year-injury combinations exist
 injury_trend_top5_filled <- injury_trend_top5 %>%
