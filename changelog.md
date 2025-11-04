@@ -1,5 +1,11 @@
 ## Changelog
 
+---
+### 2025-11-03
+#### Updated
+- Updated wording in README for clarity and clearer definitions of domestic violence.
+
+---
 ### 2025-06-16
 #### Added
 - New dvScriptUrbanSuburban.R script to analyze urban vs rural domestic violence injury patterns (2020–2024).
